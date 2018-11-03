@@ -20,9 +20,12 @@ p {
     line-height: 1.7;
 }
 
+section {
+    margin-bottom: 4em;
+}
+
 .container {
     max-width: 45em;
-    margin-bottom: 4em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,10 +34,6 @@ p {
     .container {
         margin-top: 2em;
     }
-}
-
-.about {
-    margin-bottom: 3em;
 }
 
 .about img {
@@ -68,7 +67,9 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
     z-index: 1;
 }
 .work-link .text {
@@ -94,4 +95,26 @@ p {
 .work-link .text p {
     margin: 0;
     max-width: 80%;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 0%, .4);
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75em;
+}
+
+.contact span {
+    margin-left: .5em;
+    margin-right: .3em;
+}
+
+.contact img {
+    display: inline-block;
+    max-width: .75em;
+    opacity: .5;
+}
+
+.contact li:hover img {
+    opacity: .8;
 }
